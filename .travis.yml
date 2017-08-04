@@ -16,7 +16,7 @@ before_install:
 install:
   - wget https://raw.githubusercontent.com/y-yu/install-tex-travis/master/install-tex.sh
   - chmod +x install-tex.sh
-  - ". ./install-tex.sh"
+  - . ./install-tex.sh
   - tlmgr install collection-luatex collection-fontsrecommended
     collection-langjapanese latexmk enumitem piff menukeys everyhook svn-prov
     xstring adjustbox collectbox relsize catoptions cprotect bigfoot ifptex type1cm
