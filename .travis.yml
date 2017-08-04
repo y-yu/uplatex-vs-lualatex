@@ -20,6 +20,7 @@ install:
   - tlmgr install collection-luatex collection-fontsrecommended
     collection-langjapanese latexmk enumitem piff menukeys everyhook svn-prov
     xstring adjustbox collectbox relsize catoptions cprotect bigfoot ifptex type1cm
+  - luaotfload-tool -u -vvv
 script:
   - if [[ "$TEX" = 'lualatex' ]]; then
       lualatex main && lualatex main && lualatex main;
